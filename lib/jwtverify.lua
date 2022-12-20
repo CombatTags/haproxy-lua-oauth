@@ -47,9 +47,7 @@ local openssl = {
 }
 
 local function log(msg)
-  if config.debug then
-      core.Debug(tostring(msg))
-  end
+  core.Debug(tostring(msg))
 end
 
 local function dump(o)
