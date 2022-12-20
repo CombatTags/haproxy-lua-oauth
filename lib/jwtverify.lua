@@ -31,6 +31,8 @@ if not config then
   }
 end
 
+config.debug = true
+
 -- search these paths for *.lua and *.so files on CentOS/RHEL
 package.path = package.path .. ';/usr/local/share/lua/5.3/?.lua'
 package.cpath = package.cpath .. ';/usr/local/lib/lua/5.3/?.so;/usr/local/lib/lua/5.3/?/?.so'
