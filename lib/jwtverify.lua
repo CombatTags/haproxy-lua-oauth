@@ -92,6 +92,8 @@ local function readAll(file)
 end
 
 local function decodeJwt(authorizationHeader)
+  log('Decode start')
+  
   local headerFields = core.tokenize(authorizationHeader, " .")
 
   if #headerFields ~= 4 then
