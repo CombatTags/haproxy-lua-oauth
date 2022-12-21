@@ -48,7 +48,7 @@ local openssl = {
 
 local function log(msg)
   core.Debug(tostring(msg))
-  core.log(core.info, "info message!\n")
+  core.log(core.info, tostring(msg))
 end
 
 local function dump(o)
